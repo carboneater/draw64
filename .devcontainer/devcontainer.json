@@ -3,9 +3,25 @@
 {
 	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
-	"features": {
-	}
+	//"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+	//"features": {
+	//}
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"antfu.slidev",
+				"ms-azuretools.vscode-docker",
+				"ms-python.black-formatter"
+			]
+		}
+	},
+	"dockerComposeFile": "docker-compose.yml",
+	"runArgs": [
+		"--network=bridge"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

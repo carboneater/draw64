@@ -1,7 +1,8 @@
 {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
     "slidev.force-enabled": true,
     "slidev.include": [
-        "**/slides.md",
-        "talk.md"
+        "slidev/talk.md"
     ]
 }

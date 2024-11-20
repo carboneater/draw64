@@ -24,8 +24,32 @@ dependencies = [
     "websockets",
     "sse-starlette",
     "black>=24.10.0",
+    "opentelemetry-instrumentation-fastapi>=0.49b2",
+    "opentelemetry-instrumentation-system-metrics>=0.49b2",
+    "opentelemetry-sdk>=1.28.2",
+    "opentelemetry-exporter-prometheus>=0.49b2",
+    "opentelemetry-distro>=0.49b2",
+    "opentelemetry-instrumentation-asyncio>=0.49b2",
+    "opentelemetry-instrumentation-dbapi>=0.49b2",
+    "opentelemetry-instrumentation-logging>=0.49b2",
+    "opentelemetry-instrumentation-sqlite3>=0.49b2",
+    "opentelemetry-instrumentation-threading>=0.49b2",
+    "opentelemetry-instrumentation-urllib>=0.49b2",
+    "opentelemetry-instrumentation-wsgi>=0.49b2",
+    "opentelemetry-instrumentation-asgi>=0.49b2",
+    "opentelemetry-instrumentation-httpx>=0.49b2",
+    "opentelemetry-instrumentation-jinja2>=0.49b2",
+    "opentelemetry-instrumentation-starlette>=0.49b2",
+    "opentelemetry-instrumentation-tortoiseorm>=0.49b2",
 ]
 
 [project.urls]
 Homepage = "https://github.com/guillaumep/draw64"
 Issues = "https://github.com/guillaumep/draw64/issues"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "isort>=5.13.2",
+    "opentelemetry-distro>=0.49b2",
+]
